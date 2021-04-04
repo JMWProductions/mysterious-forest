@@ -25,7 +25,7 @@ func manage_velocity(delta):
 	velocity = Vector2.ZERO
 	mouse_position = get_global_mouse_position()
 	var vector = mouse_position - position
-	rotation += vector.angle()
+	rotation = vector.angle()
 	
 	if Input.is_action_pressed("move_up"):
 		velocity.y = -60
@@ -41,6 +41,7 @@ func manage_actions():
 		var rock_inst = rock.instance()
 		owner.add_child(rock_inst)
 		rock_inst.transform = $aim_point.global_transform
-		rock_inst.apply_central_impulse(position - mouse_position)
-		print(mouse_position)
-		rock_inst.add_torque(200)
+		rock_inst.starting_position = $aim_point.global_position
+		rock_inst.apply_central_impulse((mouse_position - position).normalized() * 100)
+		rock_inst.starting_direction = (mouse_position - position).normalized()
+
