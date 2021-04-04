@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scenes/Bush.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
@@ -8,9 +8,10 @@
 [ext_resource path="res://music.wav" type="AudioStream" id=6]
 [ext_resource path="res://scripts/Camera2D.gd" type="Script" id=7]
 [ext_resource path="res://scenes/DARKNESS.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/Collectible.tscn" type="PackedScene" id=9]
+[ext_resource path="res://images/krzak rozy.png" type="Texture" id=10]
 
 [node name="World" type="Node2D"]
-modulate = Color( 0.0156863, 0.0156863, 0.0156863, 1 )
 self_modulate = Color( 0, 0, 0, 1 )
 light_mask = -2147483647
 position = Vector2( 0.694992, -2.58977 )
@@ -55,8 +56,26 @@ position = Vector2( -38.2634, -105.084 )
 [node name="Bush9" parent="Bushes" instance=ExtResource( 1 )]
 position = Vector2( 134.608, -174.857 )
 
+[node name="Bush16" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 819.017, -753.902 )
+
+[node name="Bush17" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 1016.69, -499.431 )
+
+[node name="Bush18" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 780.392, -388.099 )
+
+[node name="Bush19" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 364.604, -428.997 )
+
+[node name="Bush20" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 1227.99, -715.277 )
+
+[node name="Bush21" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 1218.9, -338.114 )
+
 [node name="Bush10" parent="Bushes" instance=ExtResource( 1 )]
-position = Vector2( 345.49, -173.816 )
+position = Vector2( 343.218, -255.61 )
 
 [node name="Bush11" parent="Bushes" instance=ExtResource( 1 )]
 position = Vector2( 672.702, -106.871 )
@@ -72,6 +91,144 @@ position = Vector2( 152.005, 414.347 )
 
 [node name="Bush15" parent="Bushes" instance=ExtResource( 1 )]
 position = Vector2( -51.0669, 389.353 )
+
+[node name="Bush22" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -337.465, -244.959 )
+
+[node name="Bush23" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -562.4, -313.121 )
+
+[node name="Bush24" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -323.833, -497.159 )
+
+[node name="Bush25" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -705.54, -535.784 )
+
+[node name="Bush26" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -494.238, -742.542 )
+
+[node name="Bush27" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -17.1036, -742.542 )
+
+[node name="Bush28" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 294.372, -689.339 )
+
+[node name="Bush29" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 123.765, -522.151 )
+
+[node name="Bush30" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 607.715, -513.063 )
+
+[node name="Bush31" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -161.013, 252.496 )
+
+[node name="Bush32" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -458.341, 199.182 )
+
+[node name="Bush33" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -312.753, 309.911 )
+
+[node name="Bush34" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -347.612, 45.391 )
+
+[node name="Bush35" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -65.8075, -258.748 )
+
+[node name="Bush36" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -415.981, 446.813 )
+
+[node name="Bush37" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -223.23, 532.936 )
+
+[node name="Bush38" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -567.721, 354.539 )
+
+[node name="Bush39" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 750.856, 325.33 )
+
+[node name="Bush40" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 796.297, 125.388 )
+
+[node name="Bush41" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 844.01, -74.554 )
+
+[node name="Bush42" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 535.009, -215.422 )
+
+[node name="Bush43" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 1053.04, 73.1304 )
+
+[node name="Bush44" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 939.437, 277.617 )
+
+[node name="Bush45" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 1121.2, 391.22 )
+
+[node name="Bush46" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 1221.17, -33.6568 )
+
+[node name="Bush47" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 1225.72, 227.631 )
+
+[node name="Bush48" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -453.341, -70.0099 )
+
+[node name="Bush49" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -562.4, 93.579 )
+
+[node name="Bush50" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -737.349, 218.543 )
+
+[node name="Bush51" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -705.54, -67.7378 )
+
+[node name="Bush52" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -443.576, 674.029 )
+
+[node name="Bush53" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -214.837, 816.294 )
+
+[node name="Bush54" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -708.579, 752.136 )
+
+[node name="Bush55" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 105.956, 911.137 )
+
+[node name="Bush56" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -407.313, 958.559 )
+
+[node name="Bush57" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 404.433, 860.926 )
+
+[node name="Bush58" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -16.7824, 662.872 )
+
+[node name="Bush59" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 504.855, 609.871 )
+
+[node name="Bush60" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 688.962, 888.821 )
+
+[node name="Bush61" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 761.489, 559.66 )
+
+[node name="Bush62" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 956.754, 478.764 )
+
+[node name="Bush63" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 1188.28, 821.873 )
+
+[node name="Bush64" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 976.281, 1005.98 )
+
+[node name="Bush65" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 507.644, 1064.56 )
+
+[node name="Bush66" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -156.257, 1058.98 )
+
+[node name="Bush67" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 239.852, 1075.72 )
 
 [node name="Boss" parent="." instance=ExtResource( 3 )]
 position = Vector2( 241.03, 262.535 )
@@ -91,3 +248,217 @@ scale = Vector2( 34.8249, 34.8249 )
 color = Color( 0, 0, 0, 1 )
 energy = 0.5
 mode = 1
+
+[node name="Roze" type="Node2D" parent="."]
+
+[node name="krzak rozy" type="Sprite" parent="Roze"]
+position = Vector2( 25.5864, 295.557 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy2" type="Sprite" parent="Roze"]
+position = Vector2( -224.58, 365.275 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy3" type="Sprite" parent="Roze"]
+position = Vector2( -329.157, 211.485 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy4" type="Sprite" parent="Roze"]
+position = Vector2( -240.984, 80.2502 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy5" type="Sprite" parent="Roze"]
+position = Vector2( 153.888, 191.955 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy6" type="Sprite" parent="Roze"]
+position = Vector2( 56.9617, 87.6983 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy7" type="Sprite" parent="Roze"]
+position = Vector2( 114.791, -52.3964 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy8" type="Sprite" parent="Roze"]
+position = Vector2( -185.761, -111.041 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy9" type="Sprite" parent="Roze"]
+position = Vector2( 340.669, -90.4284 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy10" type="Sprite" parent="Roze"]
+position = Vector2( 539.571, 57.2106 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy11" type="Sprite" parent="Roze"]
+position = Vector2( 537.521, 241.759 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy12" type="Sprite" parent="Roze"]
+position = Vector2( 355.023, 352.489 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy13" type="Sprite" parent="Roze"]
+position = Vector2( -653.283, 95.8511 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy14" type="Sprite" parent="Roze"]
+position = Vector2( -578.304, 236.719 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy15" type="Sprite" parent="Roze"]
+position = Vector2( -453.341, 323.058 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy16" type="Sprite" parent="Roze"]
+position = Vector2( -10.2873, 545.721 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy17" type="Sprite" parent="Roze"]
+position = Vector2( -448.796, 61.7701 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy18" type="Sprite" parent="Roze"]
+position = Vector2( -585.121, -85.9144 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy19" type="Sprite" parent="Roze"]
+position = Vector2( 923.533, 68.5863 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy20" type="Sprite" parent="Roze"]
+position = Vector2( 1096.21, 220.815 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy21" type="Sprite" parent="Roze"]
+position = Vector2( 789.481, 200.366 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy22" type="Sprite" parent="Roze"]
+position = Vector2( 1182.55, 86.7628 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy23" type="Sprite" parent="Roze"]
+position = Vector2( 784.937, -222.238 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy24" type="Sprite" parent="Roze"]
+position = Vector2( 1184.82, -565.321 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy25" type="Sprite" parent="Roze"]
+position = Vector2( 789.481, -553.96 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy26" type="Sprite" parent="Roze"]
+position = Vector2( 328.251, -556.232 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy27" type="Sprite" parent="Roze"]
+position = Vector2( -78.4494, -492.615 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy28" type="Sprite" parent="Roze"]
+position = Vector2( -530.591, -485.798 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy29" type="Sprite" parent="Roze"]
+position = Vector2( -703.268, -288.128 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy30" type="Sprite" parent="Roze"]
+position = Vector2( 196.471, -340.386 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy31" type="Sprite" parent="Roze"]
+position = Vector2( -703.268, 420.757 )
+texture = ExtResource( 10 )
+
+[node name="Collectibles" type="Node2D" parent="."]
+
+[node name="Collectible" parent="Collectibles" instance=ExtResource( 9 )]
+position = Vector2( -298.892, -685.669 )
+
+[node name="Collectible2" parent="Collectibles" instance=ExtResource( 9 )]
+position = Vector2( 995.438, -624.3 )
+
+[node name="Collectible3" parent="Collectibles" instance=ExtResource( 9 )]
+position = Vector2( 995.438, 661.661 )
+
+[node name="Collectible4" parent="Collectibles" instance=ExtResource( 9 )]
+position = Vector2( -605.737, 1038.24 )
+
+[node name="Collectible5" parent="Collectibles" instance=ExtResource( 9 )]
+position = Vector2( 251.01, 671.24 )
+
+[node name="Collectible6" parent="Collectibles" instance=ExtResource( 9 )]
+position = Vector2( -596.999, 503.87 )
+
+[node name="krzak rozy" type="Sprite" parent="."]
+position = Vector2( -468.682, 821.873 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy2" type="Sprite" parent="."]
+position = Vector2( -686.263, 930.664 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy3" type="Sprite" parent="."]
+position = Vector2( -686.263, 671.24 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy4" type="Sprite" parent="."]
+position = Vector2( -398.944, 579.186 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy5" type="Sprite" parent="."]
+position = Vector2( -189.732, 690.767 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy6" type="Sprite" parent="."]
+position = Vector2( -94.8885, 849.768 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy7" type="Sprite" parent="."]
+position = Vector2( 66.9028, 1089.67 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy8" type="Sprite" parent="."]
+position = Vector2( -348.733, 1072.93 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy9" type="Sprite" parent="."]
+position = Vector2( 276.116, 777.241 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy10" type="Sprite" parent="."]
+position = Vector2( 267.747, 506.659 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy11" type="Sprite" parent="."]
+position = Vector2( 725.226, 690.767 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy12" type="Sprite" parent="."]
+position = Vector2( 722.436, 1056.19 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy13" type="Sprite" parent="."]
+position = Vector2( 945.596, 858.137 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy14" type="Sprite" parent="."]
+position = Vector2( 1107.39, 1103.61 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy15" type="Sprite" parent="."]
+position = Vector2( 1255.23, 515.028 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy16" type="Sprite" parent="."]
+position = Vector2( 797.753, 392.29 )
+texture = ExtResource( 10 )
+
+[node name="krzak rozy17" type="Sprite" parent="."]
+position = Vector2( 1107.39, -235.349 )
+texture = ExtResource( 10 )
