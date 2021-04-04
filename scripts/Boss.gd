@@ -1,14 +1,17 @@
 extends KinematicBody2D
 
-var player
+var player: Node2D
+var velocity = Vector2.ZERO
 
-# Called when the node enters the scene tree for the first time.
+const SPEED = 33.0
+
 func _ready():
-  player = get_tree().get_root().get_node("Player")
-  print(player)
+  player = get_tree().get_root().get_node("World").get_node("Player")
   pass # Replace with function body.
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#  pass
+func _process(delta):
+  var direction = (player.position - position).normalized()
+  rotation = direction.angle() + PI / 2
+  velocity = direction * SPEED
+  velocity = move_and_slide(velocity)
+  

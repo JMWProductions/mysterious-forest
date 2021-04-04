@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/Bush.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Boss.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scripts/World.gd" type="Script" id=4]
+[ext_resource path="res://images/tile.png" type="Texture" id=5]
+
+[node name="World" type="Node2D"]
+position = Vector2( 0.694992, -0.694992 )
+script = ExtResource( 4 )
+
+[node name="Tile" type="Sprite" parent="."]
+position = Vector2( -768.695, -863.305 )
+texture = ExtResource( 5 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 2048, 2048 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 250, 142 )
+
+[node name="Bushes" type="Node2D" parent="."]
+
+[node name="Bush" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 126.203, 32.745 )
+
+[node name="Bush2" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 291.202, 15.3545 )
+
+[node name="Bush3" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 40.7573, 183.647 )
+
+[node name="Bush4" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 454.4, 198.432 )
+
+[node name="Bush5" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 288.741, 175.918 )
+
+[node name="Bush6" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 475.905, -32.4147 )
+
+[node name="Bush7" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -106.995, 95.905 )
+
+[node name="Bush8" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -38.2634, -105.084 )
+
+[node name="Bush9" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 134.608, -174.857 )
+
+[node name="Bush10" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 345.49, -173.816 )
+
+[node name="Bush11" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 672.702, -106.871 )
+
+[node name="Bush12" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 657.081, 182.637 )
+
+[node name="Bush13" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 588.349, 377.898 )
+
+[node name="Bush14" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( 152.005, 414.347 )
+
+[node name="Bush15" parent="Bushes" instance=ExtResource( 1 )]
+position = Vector2( -51.0669, 389.353 )
+
+[node name="Boss" parent="." instance=ExtResource( 3 )]
+position = Vector2( 241.03, 262.535 )
