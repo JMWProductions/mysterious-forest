@@ -7,7 +7,6 @@ const SPEED = 33.0
 
 func _ready():
   player = get_tree().get_root().get_node("World").get_node("Player")
-  pass # Replace with function body.
 
 func _process(delta):
   var direction = (player.position - position).normalized()
