@@ -10,11 +10,13 @@ var speed;
 var rock;
 var rock_counter;
 var cooldown
+var boss
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	rock = preload("../scenes/Rock.tscn")
+	boss = preload("../scripts/Boss.gd")
 	rock_counter = 3
 	cooldown = 0
 
@@ -25,22 +27,25 @@ func _process(delta):
 	velocity = move_and_slide(velocity)
 	if cooldown != 0:
 		cooldown -= 1
+	if(get_slide_collision(0) != null):
+		if(get_slide_collision(0).get_class().begins_with("Kinematic")):
+			self.queue_free()
 
 
 func manage_velocity(delta):
-  velocity = Vector2.ZERO
-  mouse_position = get_global_mouse_position()
-  var vector = mouse_position - position
-  rotation = vector.angle()
+	velocity = Vector2.ZERO
+	mouse_position = get_global_mouse_position()
+	var vector = mouse_position - position
+	rotation = vector.angle()
 
-  if Input.is_action_pressed("move_up"):
-    velocity.y = -60
-  if Input.is_action_pressed("move_down"):
-    velocity.y = 60
-  if Input.is_action_pressed("move_right"):
-    velocity.x = 60
-  if Input.is_action_pressed("move_left"):
-    velocity.x = -60
+	if Input.is_action_pressed("move_up"):
+		velocity.y = -60
+	if Input.is_action_pressed("move_down"):
+		velocity.y = 60
+	if Input.is_action_pressed("move_right"):
+		velocity.x = 60
+	if Input.is_action_pressed("move_left"):
+		velocity.x = -60
 
 func manage_actions():
 	if Input.is_action_just_pressed("left_mouse_clicked") and rock_counter != 0 && cooldown == 0:
