@@ -1,5 +1,4 @@
 [gd_scene load_steps=8 format=2]
-
 [ext_resource path="res://scenes/Bush.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/Boss.tscn" type="PackedScene" id=3]
@@ -7,9 +6,13 @@
 [ext_resource path="res://images/tile.png" type="Texture" id=5]
 [ext_resource path="res://music.wav" type="AudioStream" id=6]
 [ext_resource path="res://scripts/Camera2D.gd" type="Script" id=7]
+[ext_resource path="res://scenes/DARKNESS.tscn" type="PackedScene" id=6]
 
 [node name="World" type="Node2D"]
-position = Vector2( 0.694992, -0.694992 )
+modulate = Color( 0.0156863, 0.0156863, 0.0156863, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+light_mask = -2147483647
+position = Vector2( 0.694992, -2.58977 )
 script = ExtResource( 4 )
 
 [node name="Tile" type="Sprite" parent="."]
@@ -79,3 +82,10 @@ autoplay = true
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 script = ExtResource( 7 )
+[node name="Light2D" parent="." instance=ExtResource( 6 )]
+visible = false
+position = Vector2( 248.694, 159.792 )
+scale = Vector2( 34.8249, 34.8249 )
+color = Color( 0, 0, 0, 1 )
+energy = 0.5
+mode = 1
