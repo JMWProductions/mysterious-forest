@@ -18,4 +18,4 @@ position = Vector2( 0.207733, -0.196976 )
 shape = SubResource( 1 )
 
 [node name="aim_point" type="Position2D" parent="."]
-position = Vector2( 16.4758, -0.0538073 )
+position = Vector2( 23.4472, -0.0538073 )

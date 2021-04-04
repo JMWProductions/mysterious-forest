@@ -46,7 +46,7 @@ func manage_actions():
 		owner.add_child(rock_inst)
 		rock_inst.transform = $aim_point.global_transform
 		rock_inst.starting_position = $aim_point.global_position
-		rock_inst.apply_central_impulse((mouse_position - position).normalized() * 100)
+		rock_inst.apply_central_impulse((mouse_position - position).normalized() * 350)
 		rock_inst.starting_direction = (mouse_position - position).normalized()
 		rock_counter -= 1
 		

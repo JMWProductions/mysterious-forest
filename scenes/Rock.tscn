@@ -16,3 +16,4 @@ texture = ExtResource( 1 )
 position = Vector2( 0, 0.0505619 )
 scale = Vector2( 0.5, 0.5 )
 shape = SubResource( 1 )
+[connection signal="body_entered" from="." to="." method="_on_Node2D_body_entered"]
