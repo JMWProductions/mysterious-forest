@@ -16,16 +16,21 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	velocity = Vector2.ZERO
-	mouse_position = get_local_mouse_position()
-	rotation += mouse_position.angle()
-	if Input.is_action_pressed("move_up"):
-		velocity.y = -1
-	if Input.is_action_pressed("move_down"):
-		velocity.y = 1
-	if Input.is_action_pressed("move_right"):
-		velocity.x = 1
-	if Input.is_action_pressed("move_left"):
-		velocity.x = -1
+	manage_velocity(delta)
 	move_and_collide(velocity)
 		
+func _input(event):
+	if event is InputEventMouseMotion:
+		mouse_position = get_local_mouse_position()
+		rotation += mouse_position.angle()
+
+func manage_velocity(delta):
+	velocity = Vector2.ZERO
+	if Input.is_action_pressed("move_up"):
+		velocity.y = -60 * delta
+	if Input.is_action_pressed("move_down"):
+		velocity.y = 60 * delta
+	if Input.is_action_pressed("move_right"):
+		velocity.x = 60 * delta
+	if Input.is_action_pressed("move_left"):
+		velocity.x = -60 * delta
