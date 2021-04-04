@@ -8,18 +8,22 @@ var velocity;
 var mouse_position;
 var speed;
 var rock;
+var rock_counter;
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-  rock = preload("../scenes/Rock.tscn")
+	rock = preload("../scenes/Rock.tscn")
+	rock_counter = 3
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-  manage_velocity(delta)
-  manage_actions()
-  velocity = move_and_slide(velocity)
+	manage_velocity(delta)
+	manage_actions()
+	velocity = move_and_slide(velocity)
+
 
 func manage_velocity(delta):
 	velocity = Vector2.ZERO
@@ -37,10 +41,13 @@ func manage_velocity(delta):
 		velocity.x = -60
 
 func manage_actions():
-	if Input.is_action_just_pressed("left_mouse_clicked"):
+	if Input.is_action_just_pressed("left_mouse_clicked") and rock_counter != 0:
 		var rock_inst = rock.instance()
 		owner.add_child(rock_inst)
 		rock_inst.transform = $aim_point.global_transform
 		rock_inst.starting_position = $aim_point.global_position
 		rock_inst.apply_central_impulse((mouse_position - position).normalized() * 100)
 		rock_inst.starting_direction = (mouse_position - position).normalized()
+		rock_counter -= 1
+		
+

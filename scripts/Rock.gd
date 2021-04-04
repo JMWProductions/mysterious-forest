@@ -14,8 +14,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if (((position - starting_position).length() > 70) && is_rolling == false):
-			is_rolling = true
-			add_central_force((get_global_mouse_position() - position).normalized() * -50)
-	if (starting_direction != (get_global_mouse_position() - position).normalized()):
-		pass
+	if (((position - starting_position).length() > 70) and is_rolling == false):
+		is_rolling = true
+		add_central_force(-starting_direction * 50)
+	if (abs((starting_direction - linear_velocity.normalized()).length()) > 0.1 and linear_velocity.normalized().length() != 0):
+		set_linear_velocity(Vector2(0,0))

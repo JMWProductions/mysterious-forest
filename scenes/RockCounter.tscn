@@ -1,0 +1,11 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_right = 136.0
+margin_bottom = 31.0
+text = "ILOSC KAMIENI:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
