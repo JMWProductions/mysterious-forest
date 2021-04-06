@@ -19,7 +19,6 @@ extents = Vector2( 38.6219, 1072.65 )
 extents = Vector2( 1374.5, 84.673 )
 
 [node name="World" type="Node2D"]
-modulate = Color( 0.0352941, 0.0352941, 0.0352941, 1 )
 self_modulate = Color( 0, 0, 0, 1 )
 light_mask = -2147483647
 position = Vector2( 0.694992, -2.58977 )
@@ -38,7 +37,7 @@ current = true
 script = ExtResource( 7 )
 
 [node name="Tile" type="Sprite" parent="."]
-position = Vector2( -807.384, -643.976 )
+position = Vector2( -807.018, -644.342 )
 texture = ExtResource( 5 )
 centered = false
 region_enabled = true
@@ -263,8 +262,64 @@ position = Vector2( -773.143, 980.674 )
 texture = ExtResource( 11 )
 
 [node name="pine55" type="Sprite" parent="Pines"]
-position = Vector2( 1215.61, -359.976 )
+position = Vector2( 1216.3, -362.552 )
+scale = Vector2( 1, 0.942863 )
 texture = ExtResource( 11 )
+offset = Vector2( 1.13599, 0.404663 )
+
+[node name="pine245" type="Sprite" parent="Pines"]
+position = Vector2( 1216.67, -389.977 )
+scale = Vector2( 1, 0.942863 )
+texture = ExtResource( 11 )
+offset = Vector2( 1.13599, 0.404663 )
+
+[node name="pine246" type="Sprite" parent="Pines"]
+position = Vector2( 1221.79, -405.702 )
+scale = Vector2( 1, 0.942863 )
+texture = ExtResource( 11 )
+offset = Vector2( 1.13599, 0.404663 )
+
+[node name="pine247" type="Sprite" parent="Pines"]
+position = Vector2( 1219.59, -426.545 )
+scale = Vector2( 1, 0.942863 )
+texture = ExtResource( 11 )
+offset = Vector2( 1.13599, 0.404663 )
+
+[node name="pine248" type="Sprite" parent="Pines"]
+position = Vector2( 1218.13, -454.337 )
+scale = Vector2( 1, 0.942863 )
+texture = ExtResource( 11 )
+offset = Vector2( 1.13599, 0.404663 )
+
+[node name="pine249" type="Sprite" parent="Pines"]
+position = Vector2( 1218.86, -477.74 )
+scale = Vector2( 1, 0.942863 )
+texture = ExtResource( 11 )
+offset = Vector2( 1.13599, 0.404663 )
+
+[node name="pine250" type="Sprite" parent="Pines"]
+position = Vector2( 1219.96, -498.218 )
+scale = Vector2( 1, 0.942863 )
+texture = ExtResource( 11 )
+offset = Vector2( 1.13599, 0.404663 )
+
+[node name="pine251" type="Sprite" parent="Pines"]
+position = Vector2( 1225.08, -524.181 )
+scale = Vector2( 1, 0.942863 )
+texture = ExtResource( 11 )
+offset = Vector2( 1.13599, 0.404663 )
+
+[node name="pine252" type="Sprite" parent="Pines"]
+position = Vector2( 1221.42, -541.734 )
+scale = Vector2( 1, 0.942863 )
+texture = ExtResource( 11 )
+offset = Vector2( 1.13599, 0.404663 )
+
+[node name="pine253" type="Sprite" parent="Pines"]
+position = Vector2( 1221.79, -564.04 )
+scale = Vector2( 1, 0.942863 )
+texture = ExtResource( 11 )
+offset = Vector2( 1.13599, 0.404663 )
 
 [node name="pine56" type="Sprite" parent="Pines"]
 position = Vector2( 1215.85, -324.427 )
@@ -1105,7 +1160,7 @@ position = Vector2( 780.392, -388.099 )
 position = Vector2( 364.604, -428.997 )
 
 [node name="Bush21" parent="Bushes" instance=ExtResource( 1 )]
-position = Vector2( 1218.9, -338.114 )
+position = Vector2( 1141.74, -351.644 )
 
 [node name="Bush10" parent="Bushes" instance=ExtResource( 1 )]
 position = Vector2( 343.218, -255.61 )
@@ -1189,7 +1244,7 @@ position = Vector2( 939.437, 277.617 )
 position = Vector2( 1121.2, 391.22 )
 
 [node name="Bush46" parent="Bushes" instance=ExtResource( 1 )]
-position = Vector2( 1221.17, -33.6568 )
+position = Vector2( 1141.82, -40.239 )
 
 [node name="Bush47" parent="Bushes" instance=ExtResource( 1 )]
 position = Vector2( 1225.72, 227.631 )
@@ -1471,6 +1526,12 @@ autoplay = true
 
 [node name="Boss" parent="." instance=ExtResource( 3 )]
 position = Vector2( 241.03, 262.535 )
+
+[node name="Boss3" parent="." instance=ExtResource( 3 )]
+position = Vector2( -343.665, 401.559 )
+
+[node name="Boss2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 861.933, 573.477 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 visible = false

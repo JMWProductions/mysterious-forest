@@ -34,7 +34,7 @@ func _process(delta):
     cooldown_collectibles -= 1
   check_for_collisions()
   
-  if contract_counter == 1:
+  if contract_counter == 6:
     get_tree().change_scene("res://scenes/Victory.tscn")
     
 func updateLabel():
@@ -43,7 +43,7 @@ func updateLabel():
 
 func check_for_collisions():
   for i in get_slide_count():
-    if get_slide_collision(i).collider.name == "Boss":
+    if get_slide_collision(i).collider.name.begins_with("Boss"):
       get_tree().change_scene("res://scenes/Defeat.tscn")
     if get_slide_collision(i).collider.has_method("collect") and cooldown_collectibles == 0:
       contract_counter += 1
