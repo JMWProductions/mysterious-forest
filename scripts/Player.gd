@@ -38,7 +38,7 @@ func _process(delta):
 func check_for_collisions():
   for i in get_slide_count():
     if get_slide_collision(i).collider.name == "Boss":
-      self.queue_free()
+      get_tree().change_scene("res://scenes/Defeat.tscn")
     if get_slide_collision(i).collider.has_method("collect") and cooldown_collectibles == 0:
       contract_counter += 1
       cooldown_collectibles = 2
