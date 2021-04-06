@@ -27,8 +27,9 @@ shape = SubResource( 1 )
 position = Vector2( 23.4472, -0.0538073 )
 
 [node name="Node2D" parent="." instance=ExtResource( 3 )]
-position = Vector2( 89.808, -1.13071 )
+position = Vector2( 128.809, -1.13057 )
 rotation = 1.5708
+scale = Vector2( 1, 1.39829 )
 texture_scale = 3.06
 
 [node name="Label" type="Label" parent="."]
