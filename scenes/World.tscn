@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scenes/Bush.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
@@ -10,15 +10,17 @@
 [ext_resource path="res://scenes/DARKNESS.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/Collectible.tscn" type="PackedScene" id=9]
 [ext_resource path="res://images/krzak rozy.png" type="Texture" id=10]
+[ext_resource path="res://images/pine.png" type="Texture" id=11]
 
 [node name="World" type="Node2D"]
+modulate = Color( 0.0156863, 0.0156863, 0.0156863, 1 )
 self_modulate = Color( 0, 0, 0, 1 )
 light_mask = -2147483647
 position = Vector2( 0.694992, -2.58977 )
 script = ExtResource( 4 )
 
 [node name="Tile" type="Sprite" parent="."]
-position = Vector2( -768.695, -863.305 )
+position = Vector2( -807.384, -643.552 )
 texture = ExtResource( 5 )
 centered = false
 region_enabled = true
@@ -462,3 +464,171 @@ texture = ExtResource( 10 )
 [node name="krzak rozy17" type="Sprite" parent="."]
 position = Vector2( 1107.39, -235.349 )
 texture = ExtResource( 10 )
+
+[node name="pine" type="Sprite" parent="."]
+position = Vector2( -504.896, 415.315 )
+texture = ExtResource( 11 )
+
+[node name="pine2" type="Sprite" parent="."]
+position = Vector2( -551.161, 628.135 )
+texture = ExtResource( 11 )
+
+[node name="pine3" type="Sprite" parent="."]
+position = Vector2( -329.087, 692.907 )
+texture = ExtResource( 11 )
+
+[node name="pine4" type="Sprite" parent="."]
+position = Vector2( -582.621, 789.139 )
+texture = ExtResource( 11 )
+
+[node name="pine5" type="Sprite" parent="."]
+position = Vector2( -123.669, 589.272 )
+texture = ExtResource( 11 )
+
+[node name="pine6" type="Sprite" parent="."]
+position = Vector2( -171.785, 459.729 )
+texture = ExtResource( 11 )
+
+[node name="pine7" type="Sprite" parent="."]
+position = Vector2( -131.072, 328.336 )
+texture = ExtResource( 11 )
+
+[node name="pine8" type="Sprite" parent="."]
+position = Vector2( -275.42, 233.955 )
+texture = ExtResource( 11 )
+
+[node name="pine9" type="Sprite" parent="."]
+position = Vector2( 59.5415, 382.004 )
+texture = ExtResource( 11 )
+
+[node name="pine10" type="Sprite" parent="."]
+position = Vector2( 118.761, 535.605 )
+texture = ExtResource( 11 )
+
+[node name="pine11" type="Sprite" parent="."]
+position = Vector2( 63.2428, 766.931 )
+texture = ExtResource( 11 )
+
+[node name="pine12" type="Sprite" parent="."]
+position = Vector2( 450.021, 755.828 )
+texture = ExtResource( 11 )
+
+[node name="pine13" type="Sprite" parent="."]
+position = Vector2( 405.606, 461.58 )
+texture = ExtResource( 11 )
+
+[node name="pine14" type="Sprite" parent="."]
+position = Vector2( 623.979, 493.04 )
+texture = ExtResource( 11 )
+
+[node name="pine15" type="Sprite" parent="."]
+position = Vector2( 642.485, 320.933 )
+texture = ExtResource( 11 )
+
+[node name="pine16" type="Sprite" parent="."]
+position = Vector2( 684.981, 754.707 )
+texture = ExtResource( 11 )
+
+[node name="pine17" type="Sprite" parent="."]
+position = Vector2( 855.386, 663.825 )
+texture = ExtResource( 11 )
+
+[node name="pine18" type="Sprite" parent="."]
+position = Vector2( 1028.06, 538.861 )
+texture = ExtResource( 11 )
+
+[node name="pine19" type="Sprite" parent="."]
+position = Vector2( 1087.14, 309.382 )
+texture = ExtResource( 11 )
+
+[node name="pine20" type="Sprite" parent="."]
+position = Vector2( 934.909, 152.609 )
+texture = ExtResource( 11 )
+
+[node name="pine21" type="Sprite" parent="."]
+position = Vector2( 682.709, 27.6456 )
+texture = ExtResource( 11 )
+
+[node name="pine22" type="Sprite" parent="."]
+position = Vector2( 550.929, -138.215 )
+texture = ExtResource( 11 )
+
+[node name="pine23" type="Sprite" parent="."]
+position = Vector2( 87.4273, -292.716 )
+texture = ExtResource( 11 )
+
+[node name="pine24" type="Sprite" parent="."]
+position = Vector2( -232.934, -304.076 )
+texture = ExtResource( 11 )
+
+[node name="pine25" type="Sprite" parent="."]
+position = Vector2( -569.2, -229.098 )
+texture = ExtResource( 11 )
+
+[node name="pine26" type="Sprite" parent="."]
+position = Vector2( -666.899, -485.842 )
+texture = ExtResource( 11 )
+
+[node name="pine27" type="Sprite" parent="."]
+position = Vector2( -428.332, -649.431 )
+texture = ExtResource( 11 )
+
+[node name="pine28" type="Sprite" parent="."]
+position = Vector2( -653.267, -740.313 )
+texture = ExtResource( 11 )
+
+[node name="pine29" type="Sprite" parent="."]
+position = Vector2( -155.684, -763.034 )
+texture = ExtResource( 11 )
+
+[node name="pine30" type="Sprite" parent="."]
+position = Vector2( -21.632, -617.622 )
+texture = ExtResource( 11 )
+
+[node name="pine31" type="Sprite" parent="."]
+position = Vector2( 141.957, -690.328 )
+texture = ExtResource( 11 )
+
+[node name="pine32" type="Sprite" parent="."]
+position = Vector2( 444.142, -547.188 )
+texture = ExtResource( 11 )
+
+[node name="pine33" type="Sprite" parent="."]
+position = Vector2( 573.65, -776.667 )
+texture = ExtResource( 11 )
+
+[node name="pine34" type="Sprite" parent="."]
+position = Vector2( 560.017, -619.894 )
+texture = ExtResource( 11 )
+
+[node name="pine35" type="Sprite" parent="."]
+position = Vector2( 784.952, -660.791 )
+texture = ExtResource( 11 )
+
+[node name="pine36" type="Sprite" parent="."]
+position = Vector2( 873.563, -451.761 )
+texture = ExtResource( 11 )
+
+[node name="pine37" type="Sprite" parent="."]
+position = Vector2( 616.819, -306.348 )
+texture = ExtResource( 11 )
+
+[node name="pine38" type="Sprite" parent="."]
+position = Vector2( 932.637, -292.716 )
+texture = ExtResource( 11 )
+
+[node name="pine39" type="Sprite" parent="."]
+position = Vector2( 1039.42, -156.392 )
+texture = ExtResource( 11 )
+
+[node name="pine40" type="Sprite" parent="."]
+position = Vector2( 1212.1, -490.386 )
+texture = ExtResource( 11 )
+
+[node name="pine41" type="Sprite" parent="."]
+position = Vector2( 1012.16, -783.483 )
+texture = ExtResource( 11 )
+
+[node name="pine42" type="Sprite" parent="."]
+position = Vector2( -614.642, 118.528 )
+texture = ExtResource( 11 )
