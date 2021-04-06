@@ -6,5 +6,5 @@ func _ready():
   player = get_tree().get_root().get_node("World").get_node("Player")
   
 func _process(delta):
-  if player != null:
-    position = player.position
+	if player != null:
+		position = player.position
