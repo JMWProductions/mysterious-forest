@@ -38,7 +38,7 @@ region_enabled = true
 region_rect = Rect2( 0, 0, 2048, 2048 )
 
 [node name="Light2D" parent="." instance=ExtResource( 8 )]
-position = Vector2( 248.386, 160.1 )
+position = Vector2( 246.227, 157.941 )
 scale = Vector2( 34.8249, 34.8249 )
 color = Color( 0, 0, 0, 1 )
 energy = 0.5
