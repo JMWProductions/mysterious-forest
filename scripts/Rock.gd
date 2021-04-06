@@ -28,5 +28,5 @@ func _on_Node2D_body_entered(body):
     body.rock_counter += 1
     body.updateLabel()
     self.queue_free()
-  if body.get_name() == "Boss" && is_rolling != true:
+  if body.get_name().begins_with("Boss") && is_rolling != true:
     body.knockbacked = true
