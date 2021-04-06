@@ -19,6 +19,7 @@ extents = Vector2( 38.6219, 1072.65 )
 extents = Vector2( 1374.5, 84.673 )
 
 [node name="World" type="Node2D"]
+modulate = Color( 0.0352941, 0.0352941, 0.0352941, 1 )
 self_modulate = Color( 0, 0, 0, 1 )
 light_mask = -2147483647
 position = Vector2( 0.694992, -2.58977 )
