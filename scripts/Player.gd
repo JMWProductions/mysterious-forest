@@ -46,6 +46,7 @@ func check_for_collisions():
       print(contract_counter)
 
 
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
 func manage_velocity(delta):
