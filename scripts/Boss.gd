@@ -23,7 +23,7 @@ func _process(delta):
       velocity = direction * SPEED
 
       for i in get_slide_count():
-        if get_slide_collision(i).collider.name.begins_with("Bush"):
+        if get_slide_collision(i).collider != null and get_slide_collision(i).collider.name.begins_with("Bush"):
           velocity = 2 * velocity.rotated(PI / 4)
       velocity = move_and_slide(velocity)
     else:

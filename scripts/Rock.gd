@@ -26,6 +26,7 @@ func _process(delta):
 func _on_Node2D_body_entered(body):
   if body.get_name() == "Player":
     body.rock_counter += 1
+    body.updateLabel()
     self.queue_free()
   if body.get_name() == "Boss" && is_rolling != true:
     body.knockbacked = true

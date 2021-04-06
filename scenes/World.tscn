@@ -38,7 +38,7 @@ current = true
 script = ExtResource( 7 )
 
 [node name="Tile" type="Sprite" parent="."]
-position = Vector2( -807.384, -643.552 )
+position = Vector2( -807.384, -643.976 )
 texture = ExtResource( 5 )
 centered = false
 region_enabled = true
@@ -1046,17 +1046,9 @@ texture = ExtResource( 11 )
 position = Vector2( 1058.8, 1365.01 )
 texture = ExtResource( 11 )
 
-<<<<<<< HEAD
-[node name="Collectible" parent="Collectibles" instance=ExtResource( 9 )]
-position = Vector2( 760.559, -300.812 )
-
-[node name="Collectible2" parent="Collectibles" instance=ExtResource( 9 )]
-position = Vector2( 997.558, -576.391 )
-=======
 [node name="pine240" type="Sprite" parent="Pines"]
 position = Vector2( 1089.73, 1365.75 )
 texture = ExtResource( 11 )
->>>>>>> a9ae4bd77f9dace063a4f6173bbc127028245c67
 
 [node name="pine241" type="Sprite" parent="Pines"]
 position = Vector2( 1119.19, 1363.54 )
@@ -1455,7 +1447,7 @@ texture = ExtResource( 10 )
 [node name="Collectibles" type="Node2D" parent="."]
 
 [node name="Collectible2" parent="Collectibles" instance=ExtResource( 9 )]
-position = Vector2( 995.438, -624.3 )
+position = Vector2( 941.594, -529.331 )
 
 [node name="Collectible3" parent="Collectibles" instance=ExtResource( 9 )]
 position = Vector2( 995.438, 661.661 )

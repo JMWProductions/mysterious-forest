@@ -36,6 +36,9 @@ func _process(delta):
   
   if contract_counter == 6:
     get_tree().change_scene("res://scenes/Victory.tscn")
+    
+func updateLabel():
+  get_node("Label").set_text("Liczba kamieni: " + str(rock_counter) + "\nLiczba kontraktów: " + str(contract_counter))
 
 
 func check_for_collisions():
