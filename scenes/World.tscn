@@ -1254,7 +1254,7 @@ position = Vector2( 1225.72, 227.631 )
 position = Vector2( -453.341, -70.0099 )
 
 [node name="Bush49" parent="Bushes" instance=ExtResource( 1 )]
-position = Vector2( -562.4, 93.579 )
+position = Vector2( -563.215, 93.579 )
 
 [node name="Bush50" parent="Bushes" instance=ExtResource( 1 )]
 position = Vector2( -737.349, 218.543 )
@@ -1504,6 +1504,9 @@ texture = ExtResource( 10 )
 
 [node name="Collectible2" parent="Collectibles" instance=ExtResource( 9 )]
 position = Vector2( 941.594, -529.331 )
+
+[node name="Collectible7" parent="Collectibles" instance=ExtResource( 9 )]
+position = Vector2( 398.563, -285.538 )
 
 [node name="Collectible3" parent="Collectibles" instance=ExtResource( 9 )]
 position = Vector2( 995.438, 661.661 )
