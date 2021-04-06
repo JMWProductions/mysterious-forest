@@ -28,8 +28,8 @@ func _process(delta):
 	if cooldown != 0:
 		cooldown -= 1
 	if(get_slide_collision(0) != null):
-		if(get_slide_collision(0).get_class().begins_with("Kinematic")):
-			self.queue_free()
+		print(get_slide_collision(0).get_signal_list());
+		
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
