@@ -38,7 +38,7 @@ region_enabled = true
 region_rect = Rect2( 0, 0, 2048, 2048 )
 
 [node name="Light2D" parent="." instance=ExtResource( 8 )]
-position = Vector2( 248.694, 159.792 )
+position = Vector2( 248.386, 160.1 )
 scale = Vector2( 34.8249, 34.8249 )
 color = Color( 0, 0, 0, 1 )
 energy = 0.5
@@ -440,7 +440,7 @@ position = Vector2( 251.01, 671.24 )
 position = Vector2( -596.999, 503.87 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 250, 142 )
+position = Vector2( 249.383, 142 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Player"]
 position = Vector2( -250, -142 )
