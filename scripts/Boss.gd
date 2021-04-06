@@ -28,7 +28,7 @@ func _process(delta):
     velocity = move_and_slide(velocity)
   else:
     velocity = direction * -750
-    move_and_slide(velocity)
+    velocity = move_and_slide(velocity)
     countdown += 1
     if countdown == 3:
       knockbacked = false
