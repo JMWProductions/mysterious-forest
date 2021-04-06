@@ -33,6 +33,9 @@ func _process(delta):
   if cooldown_collectibles != 0:
     cooldown_collectibles -= 1
   check_for_collisions()
+  
+  if contract_counter == 6:
+    get_tree().change_scene("res://scenes/Victory.tscn")
 
 
 func check_for_collisions():
@@ -44,7 +47,6 @@ func check_for_collisions():
       cooldown_collectibles = 2
       get_slide_collision(i).collider.collect()
       get_node("Label").set_text("Liczba kamieni: " + str(rock_counter) + "\nLiczba kontraktów: " + str(contract_counter))
-      print(contract_counter)
 
 
 

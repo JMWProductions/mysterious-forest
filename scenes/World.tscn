@@ -38,7 +38,7 @@ region_enabled = true
 region_rect = Rect2( 0, 0, 2048, 2048 )
 
 [node name="Light2D" parent="." instance=ExtResource( 8 )]
-position = Vector2( 246.227, 157.941 )
+position = Vector2( 246.227, 157.093 )
 scale = Vector2( 34.8249, 34.8249 )
 color = Color( 0, 0, 0, 1 )
 energy = 0.5
@@ -424,8 +424,11 @@ texture = ExtResource( 10 )
 
 [node name="Collectibles" type="Node2D" parent="."]
 
+[node name="Collectible" parent="Collectibles" instance=ExtResource( 9 )]
+position = Vector2( 760.559, -300.812 )
+
 [node name="Collectible2" parent="Collectibles" instance=ExtResource( 9 )]
-position = Vector2( 995.438, -624.3 )
+position = Vector2( 997.558, -576.391 )
 
 [node name="Collectible3" parent="Collectibles" instance=ExtResource( 9 )]
 position = Vector2( 995.438, 661.661 )
