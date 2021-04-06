@@ -25,6 +25,25 @@ light_mask = -2147483647
 position = Vector2( 0.694992, -2.58977 )
 script = ExtResource( 4 )
 
+[node name="Light2D" parent="." instance=ExtResource( 8 )]
+position = Vector2( 248.717, 160.468 )
+scale = Vector2( 34.8249, 34.8249 )
+color = Color( 0, 0, 0, 1 )
+energy = 0.5
+mode = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 5.96046e-08, 2.6226e-06 )
+current = true
+script = ExtResource( 7 )
+
+[node name="Tile" type="Sprite" parent="."]
+position = Vector2( -807.384, -643.552 )
+texture = ExtResource( 5 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 2048, 2048 )
+
 [node name="Pines" type="Node2D" parent="."]
 
 [node name="pine" type="Sprite" parent="Pines"]
@@ -1046,25 +1065,6 @@ texture = ExtResource( 11 )
 [node name="pine244" type="Sprite" parent="Pines"]
 position = Vector2( 1209.45, 1365.67 )
 texture = ExtResource( 11 )
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 5.96046e-08, 2.6226e-06 )
-current = true
-script = ExtResource( 7 )
-
-[node name="Tile" type="Sprite" parent="."]
-position = Vector2( -807.384, -643.552 )
-texture = ExtResource( 5 )
-centered = false
-region_enabled = true
-region_rect = Rect2( 0, 0, 2048, 2048 )
-
-[node name="Light2D" parent="." instance=ExtResource( 8 )]
-position = Vector2( 248.717, 160.468 )
-scale = Vector2( 34.8249, 34.8249 )
-color = Color( 0, 0, 0, 1 )
-energy = 0.5
-mode = 1
 
 [node name="Bushes" type="Node2D" parent="."]
 
