@@ -43,6 +43,7 @@ func check_for_collisions():
       contract_counter += 1
       cooldown_collectibles = 2
       get_slide_collision(i).collider.collect()
+      get_node("Label").set_text("Liczba kamieni: " + str(rock_counter) + "\nLiczba kontraktów: " + str(contract_counter))
       print(contract_counter)
 
 
@@ -73,5 +74,6 @@ func manage_actions():
     rock_inst.apply_central_impulse((mouse_position - position).normalized() * 350)
     rock_inst.starting_direction = (mouse_position - position).normalized()
     rock_counter -= 1
+    get_node("Label").set_text("Liczba kamieni: " + str(rock_counter) + "\nLiczba kontraktów: " + str(contract_counter))
     cooldown = 50
 
