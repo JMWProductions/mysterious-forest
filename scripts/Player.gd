@@ -49,13 +49,13 @@ func manage_velocity(delta):
 		velocity.x = -60
 
 func manage_actions():
-  if Input.is_action_just_pressed("left_mouse_clicked") and rock_counter != 0 && cooldown == 0:
-	var rock_inst = rock.instance()
-	owner.add_child(rock_inst)
-	rock_inst.transform = $aim_point.global_transform
-	rock_inst.starting_position = $aim_point.global_position
-	rock_inst.apply_central_impulse((mouse_position - position).normalized() * 350)
-	rock_inst.starting_direction = (mouse_position - position).normalized()
-	rock_counter -= 1
-	cooldown = 50
+	if Input.is_action_just_pressed("left_mouse_clicked") and rock_counter != 0 && cooldown == 0:
+		var rock_inst = rock.instance()
+		owner.add_child(rock_inst)
+		rock_inst.transform = $aim_point.global_transform
+		rock_inst.starting_position = $aim_point.global_position
+		rock_inst.apply_central_impulse((mouse_position - position).normalized() * 350)
+		rock_inst.starting_direction = (mouse_position - position).normalized()
+		rock_counter -= 1
+		cooldown = 50
 
