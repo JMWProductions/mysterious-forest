@@ -34,7 +34,7 @@ func _process(delta):
     cooldown_collectibles -= 1
   check_for_collisions()
   
-  if contract_counter == 6:
+  if contract_counter == 1:
     get_tree().change_scene("res://scenes/Victory.tscn")
     
 func updateLabel():
