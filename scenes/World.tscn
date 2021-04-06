@@ -19,6 +19,11 @@ light_mask = -2147483647
 position = Vector2( 0.694992, -2.58977 )
 script = ExtResource( 4 )
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 5.96046e-08, 2.6226e-06 )
+current = true
+script = ExtResource( 7 )
+
 [node name="Tile" type="Sprite" parent="."]
 position = Vector2( -807.384, -643.552 )
 texture = ExtResource( 5 )
@@ -457,11 +462,6 @@ position = Vector2( 250, 142 )
 position = Vector2( -250, -142 )
 stream = ExtResource( 6 )
 autoplay = true
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2( -250, -142 )
-current = true
-script = ExtResource( 7 )
 
 [node name="Boss" parent="." instance=ExtResource( 3 )]
 position = Vector2( 241.03, 262.535 )
