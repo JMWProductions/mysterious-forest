@@ -30,3 +30,4 @@ func _on_Node2D_body_entered(body):
     self.queue_free()
   if body.get_name().begins_with("Boss") && is_rolling != true:
     body.knockbacked = true
+  print(body.get_name());
